@@ -3,7 +3,7 @@ import spacy
 import pandas as pd
 nlp = spacy.load('en')
 from RelationVectorConnector import connectionVec, angle_between, cosine_distance, euclidean_distance
-from DependencyParser import getWordDependencyTable_V4, unique_list
+from DependencyParser import getWordDependencyTable_V4, getWordDependencyTable_V7, unique_list
 
 def buildReviewLookUp(corpusFile):
     lookUp = {}
