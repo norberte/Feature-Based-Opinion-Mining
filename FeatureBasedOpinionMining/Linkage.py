@@ -54,7 +54,7 @@ def main(reviewFeatures_LookUp, corpusPath, mainDirectory, productName, embeddin
         for sent in doc.sents:
             linkageList = []
             listOfSentences.append(str(sent))
-            wordDependencyTable = getWordDependencyTable_V4(sent)
+            wordDependencyTable = getWordDependencyTable_V7(sent)
             for feature in featureList:
                 try:
                     reviewWords = wordDependencyTable[feature]
